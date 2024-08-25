@@ -5,7 +5,7 @@ const game=new String("TicTacToe")
 console.log(game[0])
 console.log(game.__proto__)
 console.log(game.length)
-console.log(game.toUpperCase
+console.log(game.toUpperCase)
 console.log(game.charAt(2))
 console.log(game.indexOf('i'))
 const newString=game.substring(0,4)
