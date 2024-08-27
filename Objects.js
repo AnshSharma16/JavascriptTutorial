@@ -81,3 +81,10 @@ console.log(Object.values(person))
 console.log(Object.entries(person))
 console.log(person.hasOwnProperty('isLoggedIn'))
 
+const course={
+    coursename:'JS in Hindi',
+    price:'999',
+    courseinstructor:'Hitesh'
+}
+const {courseinstructor:instructor}=course
+console.log(instructor)
