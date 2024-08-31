@@ -3,8 +3,10 @@
 
 (function chai(){
     console.log("DB CONNECTED")
-})()
+})();
 
-(()=>{
-    console.log('DB connected twice')
-})()
+//Must use sei-colon while using multiple IIFE in same file
+
+((name)=>{
+    console.log(`DB connected twice :${name}`)
+})('Ansh')
