@@ -52,7 +52,7 @@ console.log(total)
 const shoppingCart=[
     {
         itemName:'js course',
-        price: 2999
+        price: 1999
     },
     {
         itemName:'python course',
@@ -63,5 +63,8 @@ const shoppingCart=[
         price: 5999
     }
 ]
-const priceToPay=shoppingCart.reduce((acc,item)=>acc+item.price,0)
+const priceToPay=shoppingCart.reduce(function(acc,item){
+    console.log(`acc: ${acc} and item: ${item.itemName}`)    
+   return acc+item.price
+},0)
 console.log(priceToPay)
