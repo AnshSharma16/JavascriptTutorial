@@ -11,14 +11,20 @@
         </style>
     </head>
     <body  class="bg-black">
-        <div>
-            <h1 id="title" class="heading">DOM learning</h1>
-            <p>Lorem ipsum dolor sit amet </p>
+        <div class="parent">
+            <div class="day" >Monday</div>
+            <div class="day" >Tuesday</div>
+            <div class="day" >Wednesday</div>
+            <div class="day" >Thursday</div>
+            <div class="day" >Friday</div>
+            <div class="day" >Saturday</div>
+            <div class="day" >Sunday</div>
         </div>
-        <ul>
-            <li>One</li>
-            <li>Two</li>
-            <li>Three</li>
-        </ul>
     </body>
+    <script>
+       const parent= document.querySelector('.parent')
+       console.log(parent)
+       console.log(parent.children)
+       console.log(parent.children[1].innerHTML)
+    </script>
 </html>
