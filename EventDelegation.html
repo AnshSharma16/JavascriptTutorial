@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: aqua;
+            padding: 40px;
+            width: max-content;
+            border-radius: 10% 10% 10% 10%;
+        }
+
+        span{
+            background-color: brown;
+            padding: 20px;
+        }
+
+        button{
+            background-color: yellowgreen;
+        }
+
+        body{
+            background-color: black;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <span>
+            <button>Click me</button>
+        </span>
+    </div>
+</body>
+
+<script>
+    const div=document.getElementsByTagName('div')[0];
+    div.addEventListener('click',(event)=>{
+        if(event.target.tagName =='BUTTON'){
+            console.log('button was clicked');
+        }
+        else if(event.target.tagName == 'SPAN'){
+            console.log('span was clicked');
+        }
+        else if(event.target.tagName == 'DIV'){
+            console.log('div was clicked');
+        }
+        else if(event.target.tagName == 'BODY'){
+            console.log('body was clicked'); //won't print, see line 39
+        }
+    })
+</script>
+
+</html>
